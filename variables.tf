@@ -41,6 +41,10 @@ variable "bucket_prefix" {
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
     default     = "my-s3bucket-"
 }
+variable "sonar_security_group" {
+  description = "Name of SonarQube security group"
+  default     = "sonar-sg-2023"
+}
 variable "tags" {
     type        = map
     description = "(Optional) A mapping of tags to assign to the bucket."
