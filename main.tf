@@ -43,7 +43,7 @@ resource "aws_security_group" "jenkins-sg-2022" {
 }
 
 resource "aws_instance" "myFirstInstance" {
-  ami           = var.ami-0e3ea3dc6b356c29a
+  ami           = ami-0e3ea3dc6b356c29a
   key_name = var.myJenkinsEC2Key
   instance_type = var.instance_type
   vpc_security_group_ids = [aws_security_group.jenkins-sg-2022.id]
