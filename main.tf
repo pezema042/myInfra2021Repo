@@ -14,7 +14,7 @@ resource "aws_vpc" "main" {
 resource "aws_security_group" "jenkins-sg-2023" {
   name        = var.security_group
   description = "security group for Ec2 instance"
-  vpc_id      = "vpc-040453c939efff3d0"
+  vpc_id      = "vpc-09c26d74e8ea18d08"
 
   ingress {
     from_port   = 8080
